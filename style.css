@@ -1,0 +1,212 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+body{
+	min-height: 110vh;
+}
+.hero{
+	height: 100vh;
+	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("./img/blood.jpg");
+	background-position: center;
+	background-attachment: fixed;
+	background-size: cover;
+	overflow-x: hidden;
+	position: relative;
+	clip-path: circle(180vh at 50% -80vh);
+}
+.nav-bar{
+	display: flex;
+	padding: 40px 120px;
+}
+.nav-logo img{
+	width: 120px;
+}
+.nav-links{
+	flex: 1;
+}
+.nav-links ul li{
+	margin-left: 50px;
+	display: inline;
+}
+.nav-links ul li{
+	list-style: none;
+	display: inline-block;
+	padding: 10px 8px;
+}
+.nav-links ul a{
+	color: #fff;
+	text-decoration: none;
+	font-size: 15px;
+	font-weight: bold;
+}
+.nav-links ul li::after{
+	content: '';
+	width: 0;
+	height: 2px;
+	background: red;
+	display: block;
+	margin: auto;
+	cursor: pointer;
+}
+.nav-links ul li:hover::after{
+	width: 100%;
+}
+.banner-title{
+	margin: 80px 130px;
+	color: #fff;
+}
+.banner-title h2{
+	font-size: 50px;
+	margin-bottom: 10px;
+}
+.banner-title h2 span{
+	color: red;
+}
+.btn{
+	padding: 20px 20px;
+	margin: 0px 130px;
+	border: 0;
+	background: red;
+	font-weight: bold;
+	cursor: pointer;
+	color: whitesmoke;
+}
+.btn:hover{
+	    background-color: black;
+}
+.vertical-bar{
+	height: 100%;
+	background: #000;
+	top: 0;
+	left: 0;
+	position: fixed;
+}
+.search-icon{
+	height: 60%;
+	width: 60px;
+}
+.search-icon .fa{
+	margin: 45px 13px;
+	display: block;
+	color: #fff;
+	font-size: 30px;
+	cursor: pointer;
+}
+.social-icons{
+	height: 30%;
+	width: 60px;
+	background: red;
+	text-align: center;
+	padding-top: 20%;
+	bottom: 0;
+	position: absolute;
+}
+.social-icons .fa{
+	margin: 15px 13px;
+	display: block;
+	padding: 8px;
+	border: 1px solid #000;
+	border-radius: 50%;
+	cursor: pointer;
+}
+.nav-bar .fa{
+	display: none;
+}
+
+@media (max-width: 700px){
+	.vertical-bar{
+		display: none;
+	}
+	.banner-title{
+		margin: 80px 40px;
+	}
+	.banner-title h2{
+		font-size: 50px;
+	}
+	.nav-bar{
+		padding: 10px 30px;
+	}
+	.fa-bars{
+		position: absolute;
+		right: 20px;
+		top: 10px;
+	}
+	.nav-bar .fa{
+		display: block;
+		color: #fff;
+		margin: 10px 25px;
+		font-size: 22px;
+		cursor: pointer;
+	}
+	.nav-links{
+		height: 100vh;
+		width: 200px;
+		background: #000;
+		top: 0;
+		right: -200px;
+		position: absolute;
+		text-align: left;
+		z-index: 2;
+		transition: 0.5s;
+	}
+	.nav-links ul a{
+		display: block;
+	}
+}
+
+@media (max-width: 412px){
+	.vertical-bar{
+		display: none;
+	}
+	.banner-title{
+		margin: 80px 40px;
+	}
+	.banner-title h2{
+		font-size: 50px;
+	}
+	.nav-bar{
+		padding: 5px 15px;
+	}
+	.fa-bars{
+		position: absolute;
+		right: 10px;
+		top: 5px;
+	}
+	.nav-bar .fa{
+		display: block;
+		color: #fff;
+		margin: 10px 25px;
+		font-size: 22px;
+		cursor: pointer;
+	}
+	.nav-links{
+		height: 100vh;
+		width: 200px;
+		background: #000;
+		top: 0;
+		right: -200px;
+		position: absolute;
+		text-align: left;
+		z-index: 2;
+		transition: 0.5s;
+	}
+	.nav-links ul a{
+		display: block;
+	}
+	.btn{
+		padding: 4px 5px;
+		margin: 0px 70px;
+		border: 0;
+		background: red;
+		font-weight: normal;
+		cursor: pointer;
+		color: whitesmoke;
+		align-items: center;
+		float: right;
+	}
+	.btn:hover{
+	    background-color: black;
+	}
+} 

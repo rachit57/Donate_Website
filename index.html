@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!--This is the code by Rachit Pandya for the spark foundation internship-->
+<html>
+<head>
+	<title>Blood Donation</title>
+  	<link rel="shortcut icon" href="./img/logo.jpg">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  	<link rel="stylesheet" type="text/css" href="./style.css">
+  	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<div class="hero">
+	<div class="nav-bar">
+		<div class="nav-logo">
+			<img src="./img/Donate-Blood.jpg">
+		</div>
+		<div class="nav-links" id="nav-links">
+		<i class="fa fa-close" onclick="closeMenu()"></i>	
+			<ul>
+				<a href="index.html"><li>HOME</li></a>
+				<a href="about.html"><li>ABOUT</li></a>
+				<a href="donate.html"><li>DONATE</li></a>
+			</ul>
+		</div>
+		<i class="fa fa-bars" onclick="showMenu()"></i>
+	</div>
+
+	<div class="banner-title">
+		<h2>"You don't have to be a <br> doctor to save lifes !!"</h2></div>
+		<a href="./donate.html" type="button" class="btn">DONATE!</a>
+	</div>
+	
+
+	<div class="footer">
+  	<style>
+  	.footer{
+  	background-color: black;
+  	text-align: center;
+  	color: white;
+  	position: fixed;
+  	left: 0;
+  	bottom: 0;
+  	width: 100%;
+  	}
+  	</style>&copy; Sparks Foundation Internship</div>
+
+  	<script>
+  		var show = document.getElementById("nav-links");
+  		function showMenu(){
+  			show.style.right = "0";
+  		}
+  		function closeMenu(){
+  			show.style.right = "-200px";
+  		}
+  	</script>
+</body>
+</html>

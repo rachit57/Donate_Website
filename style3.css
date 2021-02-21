@@ -1,0 +1,105 @@
+    body {font-family: Arial, Helvetica, sans-serif;}
+    * {box-sizing: border-box;}
+    
+    input[type=text], input[type=password] {
+      width: 100%;
+      padding: 15px;
+      margin: 5px 0 22px 0;
+      display: inline-block;
+      border: none;
+      background: #f1f1f1;
+    }
+    input[type=text]:focus{
+      background-color: #ddd;   
+      outline: none;
+    }
+    
+    #paypal-button-container{
+    
+      align-content: center;
+      width:100%;
+      padding-right:50px;
+      margin-left: 120px;
+
+    }
+    
+    .container {
+      padding: 16px;
+      margin-top: 0px;
+      background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("./img/red-heart.jpg");
+      background-position: center;
+      background-attachment: fixed;
+      background-size: cover;
+      overflow-x: hidden;
+      position: relative;
+    }
+    
+    .modal {
+      color: #f1f1f1;
+      position: fixed;
+      z-index: 1; 
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto; 
+      background-color: #66f2d6;
+      padding-top: 50px;
+      background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("./img/blood.jpg");
+      background-position: center;
+      background-attachment: fixed;
+      background-size: cover;
+      overflow-x: hidden;
+    }
+    
+    .close {
+        position: absolute;
+        right: 35px;
+        top: 15px;
+        font-size: 40px;
+        font-weight: bold;
+        color: #f1f1f1;
+      }
+      
+      .close:hover,
+      .close:focus {
+        color: #f44336;
+        cursor: pointer;
+      }
+    
+    .modal-content {
+      background-color: #014d44;
+      margin: 5% auto 15% auto; 
+      border: 1px solid #888;
+      width: 80%; 
+    }
+    hr {
+      border: 1px solid #f1f1f1;
+      margin-bottom: 25px;
+    }
+     
+    h1
+    .clearfix::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+    
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 432px) {
+  
+  
+  .modal {
+      width: 100%;
+      height: 1000px;
+      }
+
+
+    #paypal-button-container{
+      align-content: center;
+      width:100%; 
+      padding-right:50px;
+      margin-left: 30px;
+    }
+}
